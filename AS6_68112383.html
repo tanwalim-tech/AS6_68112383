@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TANWA STORE</h1>
+  <div>🛒 ตะกร้า (<span id="cart-count">0</span>)</div>
+</header>
+
+<section class="products">
+
+  <!-- 1 -->
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="เสื้อยืด" class="product-img">
+    <div class="product-info">
+      <h3>เสื้อยืด Oversize</h3>
+      <p>ราคา 490 บาท</p>
+      <button onclick="addToCart()">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="กางเกง" class="product-img">
+    <div class="product-info">
+      <h3>กางเกง Cargo</h3>
+      <p>ราคา 890 บาท</p>
+      <button onclick="addToCart()">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="product">
+    <img src="https://the-adjective.com/cdn/shop/files/WnMuqJ9mvQhTMiz6WH4ivf.png?v=1731820396&width=1946" alt="แจ็คเก็ต" class="product-img">
+    <div class="product-info">
+      <h3>แจ็คเก็ต Denim</h3>
+      <p>ราคา 1290 บาท</p>
+      <button onclick="addToCart()">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="product">
+    <img src="https://socialartprints.co/wp-content/uploads/2021/05/product-mockup-6.9.jpg" alt="ฮู้ดดี้" class="product-img">
+    <div class="product-info">
+      <h3>เสื้อ Hoodie</h3>
+      <p>ราคา 990 บาท</p>
+      <button onclick="addToCart()">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="product">
+    <img src="https://th.mlb-korea.com/cdn/shop/collections/Category_Shoes_2048x600_crop_top.jpg?v=1759251611" alt="รองเท้า" class="product-img">
+    <div class="product-info">
+      <h3>รองเท้า Sneakers</h3>
+      <p>ราคา 1590 บาท</p>
+      <button onclick="addToCart()">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="product">
+    <img src="https://img.lazcdn.com/g/p/ddb234e643d8c14bacf217185f59074a.jpg_720x720q80.jpg" alt="หมวก" class="product-img">
+    <div class="product-info">
+      <h3>หมวกแฟชั่น</h3>
+      <p>ราคา 390 บาท</p>
+      <button onclick="addToCart()">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<section class="contact">
+    <h2>ติดต่อเรา</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="ชื่อของคุณ" required>
+      <input type="email" placeholder="อีเมล" required>
+      <textarea placeholder="ข้อความ" rows="5" required></textarea>
+      <button type="submit">ส่งข้อความ</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+  <header>
+    <div class="logo">
+      <h1>TANWA STORE</h1>
+    </div>
+  
+    <div class="header-right">
+      <input type="text" id="searchInput" placeholder="ค้นหา...">
+  
+      <select id="categoryFilter">
+        <option value="all">ทั้งหมด</option>
+        <option value="shirt">เสื้อ</option>
+        <option value="pants">กางเกง</option>
+        <option value="jacket">แจ็คเก็ต</option>
+        <option value="shoes">รองเท้า</option>
+        <option value="accessory">เครื่องประดับ</option>
+      </select>
+  
+      <div class="cart">
+        🛒 (<span id="cart-count">0</span>)
+      </div>
+    </div>
+  </header>
